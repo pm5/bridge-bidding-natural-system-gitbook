@@ -1,5 +1,5 @@
 {
-  "name": "gitbook-seed",
+  "name": "bridge-bidding-natural-system-gitbook",
   "version": "0.0.1",
   "description": "",
   "private": true,
@@ -11,7 +11,6 @@
   },
   "scripts": {
     "republish": "npm run republish:lexicon && npm run republish:glossary",
-    "republish:lexicon": "google-spreadsheet-download 1CGni6oPLXliLGWleBSCHYd3zQfsiIc5-SSOfS3F9TTg 2 > lexicon.json",
     "republish:glossary": "node -e 'JSON.parse(require(\"fs\").readFileSync(\"lexicon.json\")).map(function(d){if(d[\"title\"]&&d[\"definition\"]){console.log(\"\\n# \"+d[\"title\"]+\"\\n\"+d[\"definition\"].trim().replace(/\\n{2,}/g,\"\\n\"))}})' > GLOSSARY.md",
     "postinstall": "gitbook install .",
     "test": "npm run build",
