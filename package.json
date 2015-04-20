@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/pm5/gitbook-seed/issues"
   },
-  "homepage": "https://github.com/pm5/gitbook-seed"
+  "homepage": "https://github.com/pm5/gitbook-seed",
+  "dependencies": {
+    "gitbook-plugin-json": "0.0.8"
+  }
 }
